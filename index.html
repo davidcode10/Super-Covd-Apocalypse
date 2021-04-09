@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Covid Apocalypse</title>
+    <link rel='icon' href='./img/favicon.png' type='image/x-icon' />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <audio autoplay loop>
+        <source src='./audio/music.mp3' />
+    </audio>
+    <div id="health" class="health"><img src="./img/health.png" alt="Health Icon"> Total points: <span>0</span></div>
+    <div id="start-screen" class="screen">
+        <div class="background-picture start-bg">
+            <div id="start-button" class="button start-btn">Start</div>
+        </div>
+    </div>
+    <div id="gameover-screen" class="screen">
+        <div class="background-picture gameover">
+            <div id="tryagain-button" class="button tryagain">Try again</div>
+        </div>
+    </div>
+    <div id="gamewon-screen" class="screen">
+        <div class="background-picture gamewon">
+            <div id="playagain-button" class="button tryagain">Go to level <span>0</span></div>
+            <div class="final-points">
+                <img src="./img/health.png" alt="Health Icon"> Total points: <span>0</span>
+            </div>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="js/vaccine.js"></script>
+    <script src="js/sick-people.js"></script>
+    <script src="js/points.js"></script>
+    <script src="js/platforms.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
